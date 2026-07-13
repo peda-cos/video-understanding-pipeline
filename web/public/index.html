@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video QA — scene index</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <div class="brand">SCENE INDEX</div>
+        <div class="sub">Video understanding pipeline · timestamped answers</div>
+      </div>
+      <div class="health" id="health">connecting…</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel player-panel">
+        <div class="panel-head">
+          <h2>Video</h2>
+          <select id="video-select" aria-label="Choose video"></select>
+        </div>
+        <video id="player" controls preload="metadata"></video>
+        <div id="scene-strip" class="scene-strip" aria-label="Scene thumbnails"></div>
+      </section>
+
+      <section class="panel ask-panel">
+        <div class="panel-head">
+          <h2>Ask</h2>
+          <span class="hint" id="provider-hint"></span>
+        </div>
+        <form id="ask-form" class="ask-form">
+          <input
+            id="question"
+            type="text"
+            maxlength="500"
+            autocomplete="off"
+            placeholder="How many red rectangles are visible in the scene about orchard?"
+            aria-label="Question"
+          />
+          <button type="submit" id="ask-button">Ask</button>
+        </form>
+        <div class="chips" id="examples"></div>
+        <div id="status" class="status" role="status"></div>
+        <article id="answer-card" class="answer-card hidden"></article>
+      </section>
+
+      <section class="panel evidence-panel">
+        <div class="panel-head">
+          <h2>Evidence</h2>
+          <span class="hint">caption · frame · transcript · keyword</span>
+        </div>
+        <div id="evidence" class="evidence"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

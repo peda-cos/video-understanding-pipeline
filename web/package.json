@@ -1,0 +1,12 @@
+{
+  "name": "vidqa-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "bun build src/app.ts --outfile ../.local/web/app.js --target browser --format esm"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
