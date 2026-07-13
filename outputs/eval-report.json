@@ -1,0 +1,6935 @@
+{
+  "metrics": {
+    "suite": "data/demo/benchmark.jsonl",
+    "queries_total": 100,
+    "queries_evaluated": 100,
+    "queries_skipped": 0,
+    "accuracy": 0.97,
+    "per_category": {
+      "counting": {
+        "n": 30,
+        "accuracy": 0.9333333333333333,
+        "hit@1": 1.0,
+        "hit@5": 1.0
+      },
+      "action": {
+        "n": 30,
+        "accuracy": 1.0,
+        "hit@1": 1.0,
+        "hit@5": 1.0
+      },
+      "descriptive": {
+        "n": 40,
+        "accuracy": 0.975,
+        "hit@1": 1.0,
+        "hit@5": 1.0
+      }
+    },
+    "counting_error_rate": 0.06666666666666665,
+    "action_error_rate": 0.0,
+    "retrieval_hit@1": 1.0,
+    "retrieval_hit@5": 1.0,
+    "citations_valid": 1.0,
+    "grounding": {
+      "n": 30,
+      "mean_iou": 0.7342283813747229,
+      "iou@0.3": 1.0,
+      "iou@0.5": 1.0
+    },
+    "latency_ms": {
+      "median": 1.794735999283148,
+      "p95": 3.9661489990976406
+    }
+  },
+  "details": [
+    {
+      "query_id": "q001",
+      "question": "How many red rectangles are visible in the scene about signal?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 5.528,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.106293,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.103613,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.103474,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.10162,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.101134,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q002",
+      "question": "How many green rectangles are visible in the scene about garden?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 3.966,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.102266,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.101397,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.101074,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q003",
+      "question": "How many red rectangles are visible in the scene about compass?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 3.943,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.105316,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.104025,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.103474,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.101699,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.10162,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q004",
+      "question": "How many green rectangles are visible in the scene about ember?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 3.961,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.105734,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.102266,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.101818,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.101397,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q005",
+      "question": "How many red rectangles are visible in the scene about willow?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 3.87,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.106161,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.104611,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.102589,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.101451,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.101322,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q006",
+      "question": "How many red rectangles are visible in the scene about canyon?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 4.465,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.105241,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.10542,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.103587,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.101397,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.100488,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q007",
+      "question": "How many red rectangles are visible in the scene about tundra?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "1 red rectangle visible in scene 2.",
+      "match": false,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 3.968,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.106293,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.105103,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.102266,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.101694,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.100777,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q008",
+      "question": "How many green rectangles are visible in the scene about beacon?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 4.077,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.106137,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.104498,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.103331,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.102167,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q009",
+      "question": "How many green rectangles are visible in the scene about quartz?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 green rectangles visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 4.127,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.106161,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.104107,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.103133,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.102733,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q010",
+      "question": "How many red rectangles are visible in the scene about marble?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.729,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.105734,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.105103,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.102595,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.102266,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.100435,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q011",
+      "question": "How many red rectangles are visible in the scene about ripple?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.957,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.103978,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.102746,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.102194,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.100658,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q012",
+      "question": "How many red rectangles are visible in the scene about summit?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.743,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.105486,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.102183,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.100361,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.08446,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "lexical": 3
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q013",
+      "question": "How many red rectangles are visible in the scene about hazel?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "1 red rectangle visible in scene 3.",
+      "match": false,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.82,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.105881,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.10321,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.101202,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.100658,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q014",
+      "question": "How many blue rectangles are visible in the scene about falcon?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 blue rectangle visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.681,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.103738,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.103521,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.101811,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.100586,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q015",
+      "question": "How many red rectangles are visible in the scene about pebble?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.695,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.102194,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.102183,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.100361,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q016",
+      "question": "How many red rectangles are visible in the scene about saffron?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.908,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.105734,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.104313,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.104079,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.101274,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.100733,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q017",
+      "question": "How many red rectangles are visible in the scene about indigo?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.73,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.104839,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.10273,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.101274,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.100733,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q018",
+      "question": "How many red rectangles are visible in the scene about delta?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.669,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.105241,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.104396,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.104025,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.101738,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.100733,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q019",
+      "question": "How many blue rectangles are visible in the scene about coral?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 blue rectangles visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.804,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.105933,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104615,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.102733,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.102177,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.100675,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q020",
+      "question": "How many green rectangles are visible in the scene about brisk?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.688,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.104875,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.102629,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.102343,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.100072,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q021",
+      "question": "How many red rectangles are visible in the scene about lumen?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.887,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.105881,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.10421,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.103587,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.100893,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q022",
+      "question": "How many red rectangles are visible in the scene about cedar?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.69,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.105558,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.103474,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.102595,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.100893,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.085151,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "lexical": 2
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q023",
+      "question": "How many red rectangles are visible in the scene about onyx?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.674,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.104133,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.103331,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.100893,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q024",
+      "question": "How many green rectangles are visible in the scene about tidal?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.718,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.102514,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.101637,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.100586,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q025",
+      "question": "How many red rectangles are visible in the scene about nimbus?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.805,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.10572,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.104719,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.101451,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.08446,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.082572,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q026",
+      "question": "How many green rectangles are visible in the scene about sorrel?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 green rectangle visible in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.902,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.103613,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.102706,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.102671,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.100586,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q027",
+      "question": "How many red rectangles are visible in the scene about violet?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red purple rectangles visible in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.739,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.104578,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.102993,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.102036,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100312,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q028",
+      "question": "How many red rectangles are visible in the scene about garnet?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.681,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.105734,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.104234,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.103851,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.102001,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100312,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q029",
+      "question": "How many red rectangles are visible in the scene about pylon?",
+      "category": "counting",
+      "gold": "2",
+      "prediction": "2 red rectangles visible in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.681,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.104234,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.102993,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.102036,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100312,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q030",
+      "question": "How many red rectangles are visible in the scene about orchard?",
+      "category": "counting",
+      "gold": "1",
+      "prediction": "1 red rectangle visible in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.739,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.105558,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.103945,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.103554,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.102001,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.101074,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q031",
+      "question": "Does the yellow rectangle move from left to right in the scene about signal?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the yellow rectangle moves left to right between 00:00.950 and 00:02.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.968,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.103266,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.103003,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.102746,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.100561,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q032",
+      "question": "Does the cyan circle move from left to right in the scene about garden?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the cyan circle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.743,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.106401,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103251,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.095385,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q033",
+      "question": "Does the magenta rectangle move from left to right in the scene about compass?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle remains stationary in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.717,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.105673,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.10542,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103331,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.101034,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.100675,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q034",
+      "question": "Does the red circle move from left to right in the scene about ember?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the red circle moves left to right between 00:12.950 and 00:14.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.781,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.104762,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103251,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q035",
+      "question": "Does the magenta rectangle move from left to right in the scene about willow?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.75,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.104662,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.102026,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.101935,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.101033,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q036",
+      "question": "Does the yellow circle move from left to right in the scene about canyon?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the yellow circle remains stationary in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.687,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.10601,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.103809,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.103431,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.102884,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q037",
+      "question": "Does the cyan rectangle move from left to right in the scene about tundra?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the cyan rectangle moves left to right between 00:04.950 and 00:06.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.797,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.104839,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.100601,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q038",
+      "question": "Does the magenta circle move from left to right in the scene about beacon?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta circle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.74,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.106401,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.104611,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.103559,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.095385,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q039",
+      "question": "Does the red rectangle move from left to right in the scene about quartz?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the red rectangle remains stationary in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.741,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.105745,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.1055,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.102629,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.102259,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q040",
+      "question": "Does the green circle move from left to right in the scene about marble?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the green circle moves left to right between 00:16.950 and 00:18.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.688,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.106214,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.104355,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.104002,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.100601,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q041",
+      "question": "Does the magenta rectangle move from left to right in the scene about ripple?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.691,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105896,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.1055,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.100601,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q042",
+      "question": "Does the cyan circle move from left to right in the scene about summit?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the cyan circle remains stationary in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.729,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.106137,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.104079,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.104057,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.10186,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.095385,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q043",
+      "question": "Does the magenta rectangle move from left to right in the scene about hazel?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the magenta rectangle moves left to right between 00:08.950 and 00:10.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.482,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.106293,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105103,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.100601,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q044",
+      "question": "Does the green circle move from left to right in the scene about falcon?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the green circle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.024,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.102686,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.101738,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.100312,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q045",
+      "question": "Does the green rectangle move from left to right in the scene about pebble?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the green rectangle remains stationary in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 2.226,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.105745,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.1055,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.102877,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.102011,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q046",
+      "question": "Does the blue circle move from left to right in the scene about saffron?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the blue circle moves left to right between 00:00.950 and 00:02.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.195,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.106293,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.105026,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.103251,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.101274,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.100288,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q047",
+      "question": "Does the magenta rectangle move from left to right in the scene about indigo?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.083,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104199,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.103894,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q048",
+      "question": "Does the magenta circle move from left to right in the scene about delta?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta circle remains stationary in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 2.121,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.105673,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.103827,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.103707,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.102703,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.100223,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q049",
+      "question": "Does the red rectangle move from left to right in the scene about coral?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the red rectangle moves left to right between 00:12.950 and 00:14.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.9,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104275,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.103738,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.101322,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.10024,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q050",
+      "question": "Does the blue circle move from left to right in the scene about brisk?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the blue circle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.012,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.106401,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.103251,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.101274,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.100288,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q051",
+      "question": "Does the blue rectangle move from left to right in the scene about lumen?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the blue rectangle remains stationary in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 2.028,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.105745,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.1055,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.102706,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.102183,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q052",
+      "question": "Does the yellow circle move from left to right in the scene about cedar?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the yellow circle moves left to right between 00:04.950 and 00:06.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.959,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.104258,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.103507,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.100849,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q053",
+      "question": "Does the magenta rectangle move from left to right in the scene about onyx?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.999,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.103951,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.103894,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.101811,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q054",
+      "question": "Does the red circle move from left to right in the scene about tidal?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the red circle remains stationary in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.857,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.106062,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.102927,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.101962,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q055",
+      "question": "Does the blue rectangle move from left to right in the scene about nimbus?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the blue rectangle moves left to right between 00:16.950 and 00:18.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 2.065,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.103489,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.102671,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.10024,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q056",
+      "question": "Does the yellow circle move from left to right in the scene about sorrel?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the yellow circle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.908,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.102927,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100849,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q057",
+      "question": "Does the cyan rectangle move from left to right in the scene about violet?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the cyan rectangle remains stationary in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5909090909090909,
+      "latency_ms": 1.847,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.106327,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.104355,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.102823,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.102629,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q058",
+      "question": "Does the magenta circle move from left to right in the scene about garnet?",
+      "category": "action",
+      "gold": "yes",
+      "prediction": "Yes, the magenta circle moves left to right between 00:08.950 and 00:10.720.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.927,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.104199,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.103815,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.095385,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q059",
+      "question": "Does the magenta rectangle move from left to right in the scene about pylon?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the magenta rectangle moves right to left, not left to right.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.8390243902439024,
+      "latency_ms": 1.903,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q060",
+      "question": "Does the green circle move from left to right in the scene about orchard?",
+      "category": "action",
+      "gold": "no",
+      "prediction": "No, the green circle remains stationary in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": 0.5172727272727272,
+      "latency_ms": 1.843,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.10582,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.104796,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.103955,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q061",
+      "question": "Is there a yellow rectangle in the scene about signal?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a yellow rectangle in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.947,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.104611,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.102555,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.101528,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q062",
+      "question": "Is there a cyan circle in the scene about garden?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a cyan circle in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.771,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.097827,
+          "ranks": {
+            "caption": 3,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.096875,
+          "ranks": {
+            "caption": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.095971,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q063",
+      "question": "Is there a magenta rectangle in the scene about compass?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a magenta rectangle in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.704,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.101322,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.10024,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q064",
+      "question": "Is there a red circle in the scene about ember?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a red circle in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.965,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.104918,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.101202,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.100361,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q065",
+      "question": "Is there a magenta rectangle in the scene about willow?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a magenta rectangle in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.833,
+      "retrieval": [
+        {
+          "video_id": "v001",
+          "scene_id": 5,
+          "score": 0.106293,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 3,
+          "score": 0.105103,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 1,
+          "score": 0.103175,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 2,
+          "score": 0.101562,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v001",
+          "scene_id": 4,
+          "score": 0.1,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q066",
+      "question": "Is there a yellow circle in the scene about canyon?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a yellow circle in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.682,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.103124,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.102823,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.102482,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.101147,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q067",
+      "question": "Is there a cyan rectangle in the scene about tundra?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a cyan rectangle in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.78,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.103978,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.102026,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.101788,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.101784,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q068",
+      "question": "Is there a magenta circle in the scene about beacon?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a magenta circle in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.674,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.106557,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.104531,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.102555,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.10249,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.095385,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q069",
+      "question": "Is there a red rectangle in the scene about quartz?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a red rectangle in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.7,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.106478,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.103894,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.103538,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.101694,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.100529,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q070",
+      "question": "Is there a green circle in the scene about marble?",
+      "category": "descriptive",
+      "gold": "yes",
+      "prediction": "Yes, there is a green circle in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.82,
+      "retrieval": [
+        {
+          "video_id": "v002",
+          "scene_id": 5,
+          "score": 0.106401,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 3,
+          "score": 0.103894,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 2,
+          "score": 0.10373,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 1,
+          "score": 0.101147,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v002",
+          "scene_id": 4,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q071",
+      "question": "Is there a red circle in the scene about ripple?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red circle in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.717,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.105318,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.104796,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.103133,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.102646,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.10024,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q072",
+      "question": "Is there a green rectangle in the scene about summit?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no green rectangle in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.721,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.104324,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.104611,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.103404,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.102514,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.10128,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q073",
+      "question": "Is there a red circle in the scene about hazel?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "Yes, there is a red circle in scene 3.",
+      "match": false,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.743,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.105881,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.104796,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.103894,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.101322,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.10024,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q074",
+      "question": "Is there a red rectangle in the scene about falcon?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red rectangle in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.757,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.104396,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.104414,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.102703,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.102698,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.101922,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q075",
+      "question": "Is there a red circle in the scene about pebble?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red circle in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.747,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.105169,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.104796,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.103219,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.102589,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.100361,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q076",
+      "question": "Is there a green rectangle in the scene about saffron?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no green rectangle in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.803,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.105246,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.104875,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.10321,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.10249,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.100312,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q077",
+      "question": "Is there a red circle in the scene about indigo?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red circle in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.768,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.104694,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104762,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.103186,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.102963,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 1,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.100529,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q078",
+      "question": "Is there a green rectangle in the scene about delta?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no green rectangle in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.793,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.104934,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 4,
+            "transcript": 3,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.105182,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.10321,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.101846,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 3,
+            "transcript": 1,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.100962,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q079",
+      "question": "Is there a red circle in the scene about coral?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red circle in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.816,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.105486,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.104455,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 3,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.103474,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.102646,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 2,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.100072,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q080",
+      "question": "Is there a red rectangle in the scene about brisk?",
+      "category": "descriptive",
+      "gold": "no",
+      "prediction": "No, there is no red rectangle in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.852,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.105075,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 3,
+            "transcript": 2,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.103755,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 5,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.103083,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.102443,
+          "ranks": {
+            "caption": 1,
+            "keyframe": 2,
+            "transcript": 1,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.101778,
+          "ranks": {
+            "caption": 2,
+            "keyframe": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q081",
+      "question": "What color dominates the background of the scene about ripple?",
+      "category": "descriptive",
+      "gold": "purple",
+      "prediction": "The background is purple in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.796,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.100871,
+          "ranks": {
+            "caption": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.09924,
+          "ranks": {
+            "caption": 1,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.099107,
+          "ranks": {
+            "caption": 2,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.096932,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.096161,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q082",
+      "question": "What color dominates the background of the scene about summit?",
+      "category": "descriptive",
+      "gold": "blue",
+      "prediction": "The background is blue in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.813,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.101639,
+          "ranks": {
+            "caption": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.099744,
+          "ranks": {
+            "caption": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.098165,
+          "ranks": {
+            "caption": 4,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.096635,
+          "ranks": {
+            "caption": 5,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.096129,
+          "ranks": {
+            "caption": 2,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q083",
+      "question": "What color dominates the background of the scene about hazel?",
+      "category": "descriptive",
+      "gold": "green",
+      "prediction": "The background is green in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.798,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.100871,
+          "ranks": {
+            "caption": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.099744,
+          "ranks": {
+            "caption": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.098347,
+          "ranks": {
+            "caption": 1,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.096932,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.096417,
+          "ranks": {
+            "caption": 2,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q084",
+      "question": "What color dominates the background of the scene about falcon?",
+      "category": "descriptive",
+      "gold": "red",
+      "prediction": "The background is red in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.794,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.100631,
+          "ranks": {
+            "caption": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.099139,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.098933,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.097022,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.096587,
+          "ranks": {
+            "caption": 4,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q085",
+      "question": "What color dominates the background of the scene about pebble?",
+      "category": "descriptive",
+      "gold": "yellow",
+      "prediction": "The background is yellow in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.747,
+      "retrieval": [
+        {
+          "video_id": "v003",
+          "scene_id": 5,
+          "score": 0.101119,
+          "ranks": {
+            "caption": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 1,
+          "score": 0.099496,
+          "ranks": {
+            "caption": 4,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 2,
+          "score": 0.098083,
+          "ranks": {
+            "caption": 2,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 3,
+          "score": 0.096932,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v003",
+          "scene_id": 4,
+          "score": 0.096682,
+          "ranks": {
+            "caption": 1,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q086",
+      "question": "What color dominates the background of the scene about saffron?",
+      "category": "descriptive",
+      "gold": "cyan",
+      "prediction": "The background is cyan in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.767,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.100871,
+          "ranks": {
+            "caption": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.099957,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.097379,
+          "ranks": {
+            "caption": 2,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.097338,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.096766,
+          "ranks": {
+            "caption": 3,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q087",
+      "question": "What color dominates the background of the scene about indigo?",
+      "category": "descriptive",
+      "gold": "purple",
+      "prediction": "The background is purple in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.793,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.101639,
+          "ranks": {
+            "caption": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.099189,
+          "ranks": {
+            "caption": 4,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.097338,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.097123,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.097022,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q088",
+      "question": "What color dominates the background of the scene about delta?",
+      "category": "descriptive",
+      "gold": "blue",
+      "prediction": "The background is blue in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.77,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.100631,
+          "ranks": {
+            "caption": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.099189,
+          "ranks": {
+            "caption": 4,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.098371,
+          "ranks": {
+            "caption": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.097287,
+          "ranks": {
+            "caption": 1,
+            "transcript": 2,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.096835,
+          "ranks": {
+            "caption": 3,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q089",
+      "question": "What color dominates the background of the scene about coral?",
+      "category": "descriptive",
+      "gold": "green",
+      "prediction": "The background is green in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.775,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.101119,
+          "ranks": {
+            "caption": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.099189,
+          "ranks": {
+            "caption": 4,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.098371,
+          "ranks": {
+            "caption": 2,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.097287,
+          "ranks": {
+            "caption": 1,
+            "transcript": 2,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.096346,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q090",
+      "question": "What color dominates the background of the scene about brisk?",
+      "category": "descriptive",
+      "gold": "red",
+      "prediction": "The background is red in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.78,
+      "retrieval": [
+        {
+          "video_id": "v004",
+          "scene_id": 5,
+          "score": 0.101375,
+          "ranks": {
+            "caption": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 1,
+          "score": 0.099744,
+          "ranks": {
+            "caption": 3,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 2,
+          "score": 0.097579,
+          "ranks": {
+            "caption": 4,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 4,
+          "score": 0.09698,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v004",
+          "scene_id": 3,
+          "score": 0.096635,
+          "ranks": {
+            "caption": 5,
+            "transcript": 4,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q091",
+      "question": "What color dominates the background of the scene about lumen?",
+      "category": "descriptive",
+      "gold": "yellow",
+      "prediction": "The background is yellow in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.786,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.101375,
+          "ranks": {
+            "caption": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.098948,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.098115,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.097355,
+          "ranks": {
+            "caption": 1,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.096518,
+          "ranks": {
+            "caption": 4,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q092",
+      "question": "What color dominates the background of the scene about cedar?",
+      "category": "descriptive",
+      "gold": "cyan",
+      "prediction": "The background is cyan in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.784,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.100631,
+          "ranks": {
+            "caption": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.099395,
+          "ranks": {
+            "caption": 2,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.098413,
+          "ranks": {
+            "caption": 3,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.097355,
+          "ranks": {
+            "caption": 1,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.096518,
+          "ranks": {
+            "caption": 4,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q093",
+      "question": "What color dominates the background of the scene about onyx?",
+      "category": "descriptive",
+      "gold": "purple",
+      "prediction": "The background is purple in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.749,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.101119,
+          "ranks": {
+            "caption": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.09966,
+          "ranks": {
+            "caption": 1,
+            "transcript": 4,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.097924,
+          "ranks": {
+            "caption": 5,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.097091,
+          "ranks": {
+            "caption": 2,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.096518,
+          "ranks": {
+            "caption": 4,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q094",
+      "question": "What color dominates the background of the scene about tidal?",
+      "category": "descriptive",
+      "gold": "blue",
+      "prediction": "The background is blue in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.759,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.101639,
+          "ranks": {
+            "caption": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.098851,
+          "ranks": {
+            "caption": 3,
+            "transcript": 5,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.098669,
+          "ranks": {
+            "caption": 2,
+            "transcript": 3,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.096875,
+          "ranks": {
+            "caption": 4,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.096278,
+          "ranks": {
+            "caption": 5,
+            "transcript": 2,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q095",
+      "question": "What color dominates the background of the scene about nimbus?",
+      "category": "descriptive",
+      "gold": "green",
+      "prediction": "The background is green in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.746,
+      "retrieval": [
+        {
+          "video_id": "v005",
+          "scene_id": 5,
+          "score": 0.100871,
+          "ranks": {
+            "caption": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 1,
+          "score": 0.1,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 4,
+          "score": 0.09698,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 2,
+          "score": 0.078877,
+          "ranks": {
+            "caption": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v005",
+          "scene_id": 3,
+          "score": 0.078373,
+          "ranks": {
+            "caption": 3,
+            "lexical": 4
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q096",
+      "question": "What color dominates the background of the scene about sorrel?",
+      "category": "descriptive",
+      "gold": "red",
+      "prediction": "The background is red in scene 1.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.843,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.101639,
+          "ranks": {
+            "caption": 1,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.1,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.097421,
+          "ranks": {
+            "caption": 3,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.097338,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.095913,
+          "ranks": {
+            "caption": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q097",
+      "question": "What color dominates the background of the scene about violet?",
+      "category": "descriptive",
+      "gold": "yellow",
+      "prediction": "The background is yellow in scene 2.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.839,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.101375,
+          "ranks": {
+            "caption": 2,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.102339,
+          "ranks": {
+            "caption": 3,
+            "keyframe": 1,
+            "transcript": 3,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.102177,
+          "ranks": {
+            "caption": 5,
+            "keyframe": 2,
+            "transcript": 5,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100675,
+          "ranks": {
+            "caption": 4,
+            "keyframe": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.100264,
+          "ranks": {
+            "caption": 1,
+            "transcript": 2,
+            "lexical": 2
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q098",
+      "question": "What color dominates the background of the scene about garnet?",
+      "category": "descriptive",
+      "gold": "cyan",
+      "prediction": "The background is cyan in scene 3.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.783,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.100631,
+          "ranks": {
+            "caption": 5,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.099957,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.098976,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.097123,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.095625,
+          "ranks": {
+            "caption": 4,
+            "transcript": 5,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q099",
+      "question": "What color dominates the background of the scene about pylon?",
+      "category": "descriptive",
+      "gold": "purple",
+      "prediction": "The background is purple in scene 4.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.849,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.101119,
+          "ranks": {
+            "caption": 3,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.099957,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.098976,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.096346,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.095913,
+          "ranks": {
+            "caption": 4,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "q100",
+      "question": "What color dominates the background of the scene about orchard?",
+      "category": "descriptive",
+      "gold": "blue",
+      "prediction": "The background is blue in scene 5.",
+      "match": true,
+      "hit@1": true,
+      "hit@5": true,
+      "citations_valid": true,
+      "grounding_iou": null,
+      "latency_ms": 1.795,
+      "retrieval": [
+        {
+          "video_id": "v006",
+          "scene_id": 5,
+          "score": 0.100871,
+          "ranks": {
+            "caption": 4,
+            "transcript": 1,
+            "lexical": 1
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 1,
+          "score": 0.099957,
+          "ranks": {
+            "caption": 1,
+            "transcript": 3,
+            "lexical": 2
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 2,
+          "score": 0.098976,
+          "ranks": {
+            "caption": 2,
+            "transcript": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 3,
+          "score": 0.096346,
+          "ranks": {
+            "caption": 5,
+            "transcript": 5,
+            "lexical": 4
+          }
+        },
+        {
+          "video_id": "v006",
+          "scene_id": 4,
+          "score": 0.096161,
+          "ranks": {
+            "caption": 3,
+            "transcript": 4,
+            "lexical": 5
+          }
+        }
+      ]
+    }
+  ]
+}
