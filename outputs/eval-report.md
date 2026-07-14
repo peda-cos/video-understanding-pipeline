@@ -15,8 +15,8 @@ Measured locally on the deterministic synthetic suite. No public benchmark claim
 | Grounding mean IoU (action) | 0.734 |
 | Grounding IoU@0.3 (action) | 100.0% |
 | Grounding IoU@0.5 (action) | 100.0% |
-| Ask latency median | 1.795 ms |
-| Ask latency p95 | 3.966 ms |
+| Ask latency median | 1.803 ms |
+| Ask latency p95 | 3.945 ms |
 
 ## Per-class accuracy
 

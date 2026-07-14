@@ -22,9 +22,9 @@ from .vision import visual_query
 
 RRF_WEIGHTS = {
     "caption": 1.0,
-    "keyframe": 0.3,
-    "transcript": 1.2,
-    "lexical": 4.0,
+    "keyframe": 1.0,
+    "transcript": 1.0,
+    "lexical": 1.0,
 }
 
 

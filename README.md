@@ -115,7 +115,7 @@ For 100 hours, the design is bundle-per-video and resumable: existing bundles ar
 
 ## Design decisions
 
-- **RRF with `k=60`**, following Cormack et al.; ranks from caption/keyframe/transcript plus the lexical retriever are fused. Weights (`caption 1.0`, `keyframe 0.3`, `transcript 1.2`, `lexical 4.0`) favor measurable exact evidence over the approximate visual descriptor. No weights were tuned on a held-out public set; the synthetic suite is a mechanics test.
+- **RRF with `k=60`**, following Cormack et al.; equal-weight ranks from caption/keyframe/transcript plus an IDF lexical retriever are fused. The lexical ranker is a hybrid-retrieval safeguard: it anchors queries containing a rare term (document frequency ≤ 2) to scenes that contain it, because hashed dense vectors alone misranked “the scene about *keyword*” queries. Its rank is one input among four; no per-retriever weights are hand-tuned.
 - **Scene boundary score** is the mean per-pixel HSV delta (`|ΔH| + 255|ΔS| + 255|ΔV|)/3` at 4 fps. On the fixture, cuts score ≈30–46 while in-scene motion scores ≈2–3, so threshold 27 separates them. Boundaries are quantized to the analysis frame.
 - **Deterministic embeddings** avoid model downloads and network variance. The tradeoff is semantic range: hashed text vectors and handcrafted visual descriptors cannot match CLIP/VLM embeddings on open-domain video.
 - **Named vectors, not a single pooled scene vector**, preserve the three evidence streams; the UI exposes per-stream ranks. Transcript vectors are omitted for silent scenes.
