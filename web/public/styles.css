@@ -168,6 +168,7 @@ video {
 .ask-form button:disabled { opacity: 0.55; cursor: wait; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+.ask-hint { margin-top: 8px; }
 .chip {
   background: #111722;
   border: 1px solid var(--line);
